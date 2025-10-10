@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+html{
+     font-size: 18px;
+}
+body{
+      background: linear-gradient(black 10%,rgb(223, 151, 163));
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: black;
+    height: 500px;
+    width: 900px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+grid-gap:6px;
+
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: "box1 box1 box1 box2 box3"
+                          "box1 box1 box1 box4 box3 "
+                          "box5 box6 box6 box4 box7"
+                          "box5 box6 box6 box8 box7"
+                          "box9 box10 box11 box8 box7";
+  
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#box1{
+
+grid-area: box1;
+
+}
+#box2{
+    background-color: #481919f0;
+grid-area: box2;
+padding-left: 10px;
+padding-top: 8px;
+}
+#box2>h2{
+    font-size: 1rem;
+}
+#box2>p{
+    font-size:10px;
+    padding-top: 10px;
+}
+#box3{
+   background-color: blueviolet; 
+   grid-area: box3;
+}
+#box4{
+
+    grid-area: box4;
+}
+#box5{
+    background-color:#481919f0 ;
+    grid-area: box5;
+    padding-left: 10px;
+padding-top: 8px;
+}
+#box5>h2{
+    font-size: 1rem;
+}
+#box5>p{
+    font-size: 10px;
+        padding-top: 10px;
+
+}
+#box6{
+    background-color: chocolate;
+    grid-area: box6;
+
+}
+#box7{
+  background-color: cornsilk; 
+    grid-area: box7;
+
+}
+#box8{
+    background-color: #441212f1 ;
+    grid-area: box8;
+padding-top: 8px;
+padding-left: 10px;
+}
+#box8>h2{
+    font-size: 1rem;
+}
+#box8>p{
+    font-size: 10px;
+    padding-top: 10px;
+}
+#box9{
+    background-color: #84160ceb ;
+    grid-area: box9;
+
+}
+#box9>p{
+    font-size: 10px;
+    padding-top: 45px;
+    padding-left: 35px
+}
+#box10{
+    background-color:#350a06f3;
+    grid-area: box10;
+
+}
+#box10>p{
+    font-size: 10px;
+       padding-top: 45px;
+    padding-left: 55px
+}
+
+#box11{
+   background-color: #5f2621eb; 
+    grid-area: box11;
+
+}
+#box11>p{
+    font-size: 10px;
+       padding-top: 45px;
+    padding-left: 60px
+}
