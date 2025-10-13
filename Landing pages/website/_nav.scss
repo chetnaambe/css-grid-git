@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    #logo{
+        padding-left: 5px;
+
+        font-family: 'Times New Roman', Times, serif;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        li{
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: white;
+font-size: 10px;
+            }
+            a:hover{
+                color: palevioletred;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
